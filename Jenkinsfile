@@ -15,7 +15,7 @@ pipeline {
         success {
             mail to: 'kchare8@gmail.com',
             subject: "success!",
-            body: "You managed to get me to send an email to ${env.BUILD_URL}$"
+            body: "You managed to get me to send an email to ${env.BUILD_URL}"
         }
         unstable {
             echo 'I am unstable :/'
